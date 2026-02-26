@@ -107,7 +107,7 @@ public class AnnotationContext {
     private List<Class<?>> findClasses(String scannedPackage) throws Exception {
         String path = scannedPackage.replace('.', '/');
         URL resource = getClass().getClassLoader().getResource(path);
-        File directory = new File(resource.getFile());
+        File directory = new File(resource.toURI());
         List<Class<?>> classes = new ArrayList<>();
         if (directory.exists() && directory.isDirectory()) {
             for (String file : directory.list()) {
