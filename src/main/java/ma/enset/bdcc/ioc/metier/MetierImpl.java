@@ -1,7 +1,6 @@
 package ma.enset.bdcc.ioc.metier;
 
 import ma.enset.bdcc.ioc.dao.IDao;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component("metier")
