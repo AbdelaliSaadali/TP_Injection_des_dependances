@@ -97,4 +97,9 @@ for (Field field : aClass.getDeclaredFields()) {
 ### 4. Tests du Framework
 Le fichier `MainFrameworkTest.java` (situé dans le package `ma.enset.bdcc.framework.test`) instancie avec succès `DummyMetierImpl` qui consomme `DummyDaoImpl` via les deux contextes: XML (JAXB) et Annotations.
 
-*[Insérer Capture Console : Résultat des tests du Framework XML et Annotations]*
+--- Test Framework XML (JAXB + Setter Injection) ---
+Processing in DummyMetierImpl -> Message from DummyDaoImpl injected by Custom Framework!
+
+--- Test Framework Annotations (ClassLoader + Field Injection) ---
+Processing in DummyMetierImpl -> Message from DummyDaoImpl injected by Custom Framework!
+
